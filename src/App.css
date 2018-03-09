@@ -1,0 +1,6 @@
+.buttonSty{
+font-size: 50px;
+}
+.buttonSty:hover{
+  cursor: pointer;
+}
