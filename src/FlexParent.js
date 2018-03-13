@@ -5,8 +5,14 @@ class FlexParent extends React.Component {
       super(props);
       this.state = { items: [], text: '' };
       this.handleSubmit = this.handleSubmit.bind(this);
+      console.log("FlexParent constructor");
     } 
-
+    componentWillMount(){
+      console.log("FlexParent componentWillMount");
+    }
+    componentDidMount(){
+      console.log("FlexParent componentDidMount");
+    }
     handleSubmit(e) {
       e.preventDefault();
       const newItem = {
@@ -17,20 +23,23 @@ class FlexParent extends React.Component {
       }));
     }
     render() {
+      console.log("FlexParent render");
       const button ={
-        width:300,
-        height:50,
+        width:60,
+        height:60,
         fontSize:20,
-        cursor:"pointer"
+        cursor:"pointer",
+        borderRadius:10,
+        outline: "none"
       }
       return (
         <div>          
           <form onSubmit={this.handleSubmit}>    
             <button style={button}>
-               <i class="material-icons">note_add</i>
-              Add Flex Component{this.state.items.length + 0}
+            {this.state.items.length + 0}
+              
             </button>
-           
+            
           </form>
           <FlexChild items={this.state.items} flexName={this.props.cName}/>
         </div>

@@ -7,7 +7,7 @@ class FlexChild extends Component{
             display : 'flex',
             flexDirection : this.props.flexName,
             border : " 1px solid green",
-            backgroundColor : "yellow",
+            backgroundColor : "#D90429",
             flexWrap:"wrap"
         }
         return(

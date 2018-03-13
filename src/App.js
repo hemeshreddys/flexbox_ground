@@ -9,6 +9,13 @@ class App extends Component {
     super(props);
     this.state = {isToggleOn: true};
     this.handleClick = this.handleClick.bind(this);
+    console.log("App constructor");
+  }
+  componentWillMount(){
+    console.log("App componentWillMount");
+  }
+  componentDidMount(){
+    console.log("App componentDidMount");
   }
   handleClick() {
     this.setState(prevState => ({
@@ -16,15 +23,15 @@ class App extends Component {
     }));
   }
   render() {
+    console.log("App render");
     const buttonStyle = {
       height : 50,
       padding : 10
     }
     return (
       <div>
-        <Header/>       
-        <i class="material-icons buttonSty" onClick={this.handleClick}>{this.state.isToggleOn ? 'view_module' : 'view_column'}</i>
-        <h6>{this.state.isToggleOn ? 'row' : 'column'}</h6>
+        <Header/>  
+        <i class="material-icons buttonSty" onClick={this.handleClick}>{this.state.isToggleOn ? 'view_module' : 'view_column'}</i>     
         <FlexParent cName={this.state.isToggleOn ? 'row' : 'column'} />
         <Footer/>
       </div>

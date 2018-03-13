@@ -4,7 +4,7 @@ class Header extends Component{
         const headerStyle = {
             width : "100%",
             height: 50,
-            backgroundColor : "grey",
+            backgroundColor : "#2B2D42",
             padding:20,
             boxSizing: "border-box",
             color:"white"
