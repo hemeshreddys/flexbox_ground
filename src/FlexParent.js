@@ -25,12 +25,16 @@ class FlexParent extends React.Component {
     render() {
       console.log("FlexParent render");
       const button ={
-        width:60,
-        height:60,
+        width:40,
+        height:40,
         fontSize:20,
         cursor:"pointer",
         borderRadius:10,
-        outline: "none"
+        outline: "none",
+        border:"none",
+        margin:7,
+        backgroundColor:"#2B2D42",
+        color:"white"
       }
       return (
         <div>          

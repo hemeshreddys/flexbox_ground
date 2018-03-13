@@ -26,7 +26,8 @@ class App extends Component {
     console.log("App render");
     const buttonStyle = {
       height : 50,
-      padding : 10
+      padding : 10,
+      color:"#2B2D42"
     }
     return (
       <div>
