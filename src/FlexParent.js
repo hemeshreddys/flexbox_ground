@@ -29,7 +29,7 @@ class FlexParent extends React.Component {
         height:40,
         fontSize:20,
         cursor:"pointer",
-        borderRadius:10,
+        borderRadius:5,
         outline: "none",
         border:"none",
         margin:7,

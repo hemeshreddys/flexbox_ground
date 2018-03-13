@@ -6,7 +6,6 @@ class FlexChild extends Component{
         const flexContainer = {
             display : 'flex',
             flexDirection : this.props.flexName,
-            border : " 1px solid green",
             backgroundColor : "#D90429",
             flexWrap:"wrap"
         }
